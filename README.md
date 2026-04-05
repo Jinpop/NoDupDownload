@@ -8,13 +8,20 @@
 NoDupDownload/
 ├─ manifest.json
 ├─ README.md
+├─ icons/
+│  └─ icon-128.png
 ├─ src/
 │  ├─ background.js
 │  └─ content.js
-└─ ui/
-   ├─ alert.html
-   ├─ alert.css
-   └─ alert.js
+├─ ui/
+│  ├─ alert.html
+│  ├─ alert.css
+│  └─ alert.js
+└─ docs/
+   ├─ WEBSTORE_REVIEW_CONTENT.md
+   ├─ PRIVACY_POLICY.md
+   ├─ privacy-policy.html
+   └─ PRIVACY_POLICY_URL_SETUP.md
 ```
 
 ## 동작 방식
@@ -79,7 +86,13 @@ NoDupDownload/
 ## 파일 구성
 
 - `manifest.json`: 확장 메타데이터 및 권한 설정
+- `icons/icon-128.png`: 확장 아이콘 (128x128)
 - `src/background.js`: 다운로드 감지/중복 판정/차단/재시작 로직
 - `src/content.js`: 현재 탭 오버레이 UI 렌더링 및 선택 처리
 - `ui/alert.html`, `ui/alert.css`, `ui/alert.js`: 탭 오버레이 불가 시 폴백 팝업 UI
-# NoDupDownload
+
+## 개인정보처리방침 (웹스토어 제출용)
+
+- `docs/PRIVACY_POLICY.md`: 정책 원문 (KO/EN)
+- `docs/privacy-policy.html`: 공개 URL 게시용 HTML
+- `docs/PRIVACY_POLICY_URL_SETUP.md`: Privacy Policy URL 생성/등록 가이드
