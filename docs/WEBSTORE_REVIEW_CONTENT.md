@@ -66,14 +66,6 @@ The single purpose of this extension is to detect likely duplicate downloads and
 
 Required to read download metadata (filename, URL, state, timestamp) for duplicate detection, cancel a duplicate attempt, and restart it when the user chooses Continue.
 
-### `tabs` 권한 사유 (Korean)
-
-다운로드가 발생한 탭을 식별하고, 해당 탭에 중복 경고 오버레이를 표시하기 위해 필요합니다.
-
-### `tabs` justification (English)
-
-Required to identify the tab related to the download and show the duplicate decision overlay in that tab.
-
 ### `<all_urls>` (content script match) 사유 (Korean)
 
 다운로드는 다양한 도메인에서 발생하므로, 중복 경고 오버레이를 "현재 다운로드가 발생한 페이지"에 표시하려면 모든 URL 범위에서 콘텐츠 스크립트를 로드할 수 있어야 합니다.
